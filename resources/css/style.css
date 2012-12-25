@@ -1,0 +1,440 @@
+@charset "utf-8";
+/*
+
+Author: Developed by Thiago Ramos
+
+Author Website: http://mvnew.wordpress.com
+
+Author Contact: thiagomvnew@gmail.com
+
+Description: Folha de estilos css
+
+Version: 1.0
+
+Browser Support: WebKit e FireFox
+
+------------------------------------------------------------------------------------------------------------------------
+
+*/
+
+
+/*
+-----------------------------------------------------------------------------------------------------------------------
+-------------------------- GENERALIZAÇÃO DE ESTILOS E FORMATAÇÕES ---------------------------------------------------
+*/
+html,body{
+	width:100%;	height:	100%; border:	0px;	margin:	0px;
+}
+
+body {	
+    font-family: Tahoma, Geneva, sans-serif;  font-size: 16px;  line-height: 22px;
+	background: #485d88; color: #09F; 
+}
+
+label{
+	cursor: pointer;
+	margin-top: 10px; padding:5px;
+}
+
+/* ---| Estilos para exibição do conteúdo -  |--------------------------------------------------------------------------- */
+ @font-face {
+    font-family: 'Frufiger Linotype';
+    src: url('../_fonts/frutige0.eot');
+    src: url('../_fonts/frutige0.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/frutige0.woff') format('woff'),
+         url('../_fonts/frutige0.ttf') format('truetype'),
+         url('../_fonts/frutige0.svg#FrufigerLinotype') format('svg');
+    font-weight: normal;    font-style: normal;
+}
+ @font-face {
+    font-family: 'BigNoodleTitleing';
+    src: url('../_fonts/big_noodle_titling.eot');
+    src: url('../_fonts/big_noodle_titling.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/big_noodle_titling.woff') format('woff'),
+         url('../_fonts/big_noodle_titling.ttf') format('truetype'),
+         url('../_fonts/big_noodle_titling.svg#BigNoodle Titling') format('svg');
+    font-weight: normal;    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'BigNoodleTitling';
+    src: url('../_fonts/big_noodle_titling.eot');
+    src: url('../_fonts/big_noodle_titling.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/big_noodle_titling.woff') format('woff'),
+         url('../_fonts/big_noodle_titling.ttf') format('truetype'),
+         url('../_fonts/big_noodle_titling.svg#BigNoodleTitlingRegular') format('svg');
+    font-weight: normal;    font-style: normal;
+}
+.alert_noscript{
+	left: 0px;
+	right: 0px;
+	position: fixed;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	z-index: +1000;
+	opacity: 0.90;
+	vertical-align: middle;
+	padding-top: 20%;
+	text-align: center;
+	text-shadow: -1px 2px 1px #000;
+	font: 47px 'BigNoodleTitleing';	font-variant: normal;	letter-spacing: 0.1pt;	font-size-adjust: none;	font-stretch: condensed;	
+}
+.button{
+	clear: all; margin: 0px;	box-sizing: content-box;	 border: 0px;
+	background: url('../_images/bg-buttons.png') no-repeat; color: #feffff;	
+	cursor: pointer;		
+	text-transform: none; font: 32px 'BigNoodleTitleing';font-variant: normal;letter-spacing: 0.1pt;font-size-adjust: none; font-stretch: condensed;font-weight: normal;
+}
+
+.grayTitle{
+	position: relative;
+	color: #bdbec2;
+	font: 60px 'BigNoodleTitleing';	font-variant: normal;	letter-spacing: 0.1pt;	font-size-adjust: none;	font-stretch: condensed;	
+}
+
+.input{
+	border: 2px solid #506992;  padding: 10px;border-radius: 5px;
+	color: #485f89;background: #6982ab; 
+	font-size: 14px; font-weight: bold;
+}
+
+.input:focus,.input:hover{ border: 2px solid #fefffd;  }
+
+
+hr.divisao_header{
+	clear: left;  width:558px;	height: 0.5px;	margin:0 auto;	padding-top: 1px;	
+	background: white;	color: #c8c9cb;	border-width: 1px 0px 0px 0px;	border-color: #c7c8ca;	border-style: solid;	
+}
+nav.goShop{
+	position: relative; height: auto;	width: auto; margin-left:42%;	margin-top: -10px;	padding-bottom: 5px;		
+}
+nav.goShop a{
+	padding: 0px;	margin: 0px;	
+	font-size: 27px;
+}
+nav.goShop a:hover{
+	text-shadow: -0px 1px 2px #3a527c;	color: #4b5e86;
+}
+
+/*
+-----------------------------------------------------------------------------------------------------------------------
+-------------------------- STYLES ---------------------------------------------------
+*/
+
+#wap_full{
+	position: relative;	 width:	100%;	height:	auto;	float: left;	margin:	0px;
+	background:	url('../_images/bg_full2.jpg') repeat; 
+}
+#wap_full #container{
+	position: relative; width:	1000px;	height: auto;	min-height: 750px;		margin: 0 auto;
+}
+
+
+/* ---| Navegação Principal-  |--------------------------------------------------------------------------- */
+#wap_full #container #menu{
+	width: 19.5%;	height: 630px;	float:	left;
+	background:url('../_images/bg_menu.jpg') -0px -10px no-repeat #b2103f;
+}
+
+#wap_full #container #menu ul{	
+	width: 170px; height: auto;	float: left;  margin: 145px 30px;	padding: 0;		
+	list-style: none;
+}
+#wap_full #container #menu>ul:after,#wap_full #container #menu>ul:before{
+	position: absolute;	
+	content: '____________';
+	height: 2px;float: left;	
+	color: #d18d8e;
+	font-size:22px
+}
+#wap_full #container #menu>ul:before{
+	margin-top: -40px;	
+}
+#wap_full #container #menu>ul:after{
+	margin-top: 40px;	
+}
+
+#wap_full #container #menu>ul li{
+	height: 20px; min-width: 160px;		padding: 0px 65px 0px 5px; margin-bottom: 15px;
+	font: 40px 'BigNoodleTitling';	font-variant: normal;	letter-spacing: 0.1pt;	font-size-adjust: none;	font-stretch: condensed;	
+}
+#wap_full #container #menu>ul li a{	
+		color: #ffffff;
+		padding: 0px 65px 0px 5px;	
+}
+#wap_full #container #menu>ul li a:hover{
+	background: #aa2248;	
+}
+
+/* ---| Ul de redes sociais-  |--------------------------------------------------------------------------- */
+#wap_full #container #menu #social_networks{
+	position: relative; width: auto;	height: auto;	float: left;	margin: -75px 0px 0px 23px;		top: 0px;
+	
+}
+#wap_full #container #menu #social_networks ul{
+	margin: 0px;	padding: 0px;	width: auto;	display: inline;	margin: 0px;	
+}
+#wap_full #container #menu #social_networks ul:before{
+	content: "Redes Sociais";
+	display: block;	padding-left: 5px;
+	font-size: 10px;	letter-spacing: 1px;	font-weight: bold;
+	color: #fffeff;
+}
+#wap_full #container #menu #social_networks ul li{
+	width: auto; float: left;	padding: 3px;		
+}
+#wap_full #container #menu #social_networks ul li img{
+	max-height: 22px;	
+}
+#wap_full #container #menu #social_networks ul li img.social_networksFlick{
+	max-height: 15px;	vertical-align: bottom;
+}
+
+
+/* ---| Header geral-  |--------------------------------------------------------------------------- */
+#wap_full #container #header{	
+	position: relative; width:80%;height:	auto; max-height:	310px; float: right; top: 0px; 	margin-top: 0px;				
+}
+#wap_full #container #header #logo{
+	position: relative;	 float: left; margin-left: 18%;	margin-top: 40px;	padding-bottom: 20px;	
+}
+#wap_full #container #header #player{
+	width:102px;	height: 120px;	float: right; margin-top: 20px;
+	background: #d2d3d5;
+}
+
+
+/* ---| Container geral-  |--------------------------------------------------------------------------- */
+#wap_full #container #content{
+	position: relative; width: 800px; height: auto;  margin-bottom: 100px; float: left;  left: 0px;	margin-top: 15px;	
+}
+
+#wap_full #container #content #main_content{
+	position: relative;	width:611px;	height: auto;	margin: 0 auto;	
+}
+
+#wap_full #container #content #main_content h1{text-align: center; }
+/*
+-----------------------------------------------------------------------------------------------------------------------
+-------------------------- HOME ---------------------------------------------------
+*/
+
+
+/* ---| Slider de imagens da Home-  |--------------------------------------------------------------------------- */
+#wap_full #container #content #galeria_home{
+	position: relative;	width:611px;	height: 324px;	margin: 0 auto;
+}
+
+#wap_full #container #content #galeria_home ul{
+	position: relative;	width:100%;	height: 292px;	margin:0px;padding: 18px 0px 0px 10px;
+	list-style: none;
+}
+#wap_full #container #content #galeria_home ul li{
+	position: relative;	width:184px;	height: 282px;	float: left;	display: inline;	margin-right: 17px;
+	background: #ffffff;
+	visibility: visible;
+}
+
+.jcarousel-clip {  position:relative; width:611px;	height: 324px; overflow:hidden;}
+.jcarousel-prev ,.jcarousel-next {
+	position:absolute; width: 28px; height: 30px; display: block; float: left; 	top: 45%; right: -40px;
+	cursor: pointer; 
+	background: url(../_images/iconGoRight.png) no-repeat 0 0;
+}
+.jcarousel-prev {
+	left: -40px;
+	background: url(../_images/iconGoLeft.png) no-repeat 0 0;
+}
+
+#wap_full #container #content #galeria_home ul li .img-cnt {
+	position: relative; width:180px;	height: 282px;	float: left;
+	display: inline;visibility: visible;
+	background: #000;
+}
+
+#wap_full #container #content #galeria_home ul li .img-cnt img {
+	 margin: 0 auto; padding-top: 6px;
+	 display: block;
+}
+
+
+/*
+-----------------------------------------------------------------------------------------------------------------------
+-------------------------- NEWS ---------------------------------------------------
+*/
+
+#wap_full #container #content #main_content section#news_list{
+	position: relative; width:611px;	height: auto;	margin: 0 auto;
+}
+#wap_full #container #content #main_content section#news_list article.row_new{
+	width: inherit; height: auto;   display: block; margin-top:29px;
+	background: #ffffff;
+}
+#wap_full #container #content #main_content section#news_list article.row_new .figures_to_new{
+	position: relative; float: left; width: 321px; height: 100%; min-height: 200px;  margin-right: 15px;
+	background: #f3f3f5;
+}
+
+#wap_full #container #content #main_content section#news_list article.row_new .description_to_new{
+	position: relative; padding:2px; margin: 5px; height: auto;  min-height: 200px; overflow: hidden;
+	text-align: left;
+}
+
+#wap_full #container #content #main_content section#news_list article.row_new  .description_to_new h3{
+	margin: 5px; 
+	font: 30px 'BigNoodleTitleing';	font-variant: normal;	letter-spacing: 0.1pt;	font-size-adjust: none;	font-stretch: condensed;	text-align: center;
+	color: #485d88;
+	text-align: left;
+}
+
+#wap_full #container #content #main_content section#news_list article.row_new .description_to_new p{
+	margin: 0px; padding: 0px;
+
+	font-size: 10px;
+}
+
+
+/*
+-----------------------------------------------------------------------------------------------------------------------
+-------------------------- REDTAPE ---------------------------------------------------
+*/
+
+#wap_full #container #content #main_content section#about_list{
+	position: relative; width:570px; height: auto;	margin: 0 auto; padding: 20px;
+	background: #ffffff;
+}
+#wap_full #container #content #main_content section#about_list article.row_about{
+	position: relative; width: 90%; height: auto;display: block; margin-top: 10px; 
+
+}
+#wap_full #container #content #main_content section#about_list article.row_about .figures_to_about{
+	position: relative; float: left; width: 100%; height: 196px; 
+	background: #f3f3f5;
+}
+
+#wap_full #container #content #main_content section#about_list article.row_about .description_to_about{
+	position: relative; clear: left; padding-top:25px; 
+	text-align: left; color: #7f7f7f; font-size: 14px; 
+}
+
+#wap_full #container #content #main_content section#about_list article.row_about  .description_to_about h3{
+	margin: 5px; 
+	font: 30px 'BigNoodleTitleing';	font-variant: normal;	letter-spacing: 0.1pt;	font-size-adjust: none;	font-stretch: condensed;	text-align: center;
+	color: #485d88;
+	text-align: left;
+}
+
+#wap_full #container #content #main_content section#news_list article.row_new .description_to_about p{
+	margin: 0px; padding: 0px;
+
+	font-size: 10px;
+}
+
+
+/* ---| Botão de contato do Rodapé-  |--------------------------------------------------------------------------- */
+ #contact_jump{	
+	position: absolute; width: 100%; top: -9.5%;	height:8px; 				
+	box-shadow:0px -4px 4px #cbcbcf;
+	background: url('../_images/border-image.jpg') no-repeat 63% 20px ;
+	z-index: 0;
+}
+.overlay_contact{ left: 0px; right: 0px; position: absolute; background: #f5f5f5; height: 0px; opacity: 0.80; z-index: 0;bottom: 179px;}
+
+ #contact_jump a{	
+	position: absolute; width: 70px;	height: 30px; padding: 10px;	margin-left: 53%; top: -40px;
+	border-radius:5000px 5000px 0px 0px;
+	-moz-border-radius:5000px 5000px 0px 0px;
+	-webkit-border-radius:5000px 5000px 0px 0px;
+	background: #495f88; background-clip: border-box;	color: #e8e8ea;box-shadow: 0px -1px 5px #16294e;	
+	font: 22px 'BigNoodleTitling';	font-variant: normal;	letter-spacing: 0.1pt;	font-size-adjust: none;	font-stretch: condensed;	text-align: center;
+}
+#contact_jump a:hover{
+	background: #a62345;
+}
+
+/* ---| Container geral de rodapé-  |--------------------------------------------------------------------------- */
+#wap_footer{
+	position: relative; float:left; width: 100%; height: auto; margin-top: -16px;
+	border-width: 16px 0px 0px 0px; border-style: solid; border-color: #f5f5f5;	
+	z-index:25;	background: #485d88;
+}
+#wap_footer #content_footer{
+	width:auto; height: auto; float: left;   margin-top:-16px;  padding-left: 20%; padding-top: 40px;
+	border-width: 16px 0px 0px 0px; border-style: solid; border-color: #f5f5f5;	
+	color: #d2d6e2; background: #485d88; z-index:  3; position: relative;
+}
+#wap_footer #content_footer .blockOne{
+	width: 160px; height: 120px; margin-left: 0px;
+	border-width:0px 1px 0px 0px;	border-style: solid; border-color: #fff;
+}
+#wap_footer #content_footer .blockTwo{
+	width: 100px; height: 120px; margin-left: 40px;
+	border-color: #949fbd;border-width:0px 1px 0px 0px;	border-style: solid;
+}
+#wap_footer #content_footer .blockThree{
+	float: left; width: 290px;margin-left: 40px;	margin-right: 40px;	padding-top: 20px;
+	border-color: #949fbd;
+}
+#wap_footer #content_footer .blockFour{
+	float: left;  width: auto; height: 120px; margin-left: -20px; margin-right: 50px;	padding-left: 25px;
+	border-color: #949fbd;border-width:0px 0px 0px 1px;	border-style: solid;
+}
+#wap_footer #content_footer .blockFour nav ul{
+	list-style: none;
+	margin-top: 25px;
+	
+}
+#wap_footer #content_footer .blockFour nav ul li{
+	display: inline;
+	margin: 5px;
+	width: auto;
+	height: 100px;
+	border-radius: 50%;	
+}
+#wap_footer #content_footer .blockFour nav ul li a{	
+	background: #fff;
+	padding:10px 10px 10px 24px;
+	border-radius: 50%;	
+}
+#wap_footer #content_footer .blockThree h3,#wap_footer #content_footer .blockFour h3{
+	margin-bottom: 5px;
+	font-size: 15px;
+}
+#wap_footer #content_footer .blockThree form .newsletter{
+	width: 250px;
+}
+#wap_footer #content_footer .blockThree form input.button{
+	float: right;	margin-right: 15px;	margin-top: 10px;  height: 40px; background-position: -200px;
+}
+
+#wap_footer #content_footer .blockOne,#wap_footer #content_footer .blockTwo,#wap_footer #content_footer .blockThree{	
+	float: left; 
+	font: 13px 'Frufiger Linotype';	font-variant: normal;	letter-spacing: 0.1pt;	font-size-adjust: none;	font-stretch: condensed;
+}
+#wap_footer #content_footer .blockOne h3{
+	font-size: 15px;
+}
+#wap_footer #content_footer .blockOne nav,#wap_footer #content_footer .blockTwo nav{
+	position: relative; float: left; width: 160px;	height: 120px;margin-top: 10px	
+}
+#wap_footer #content_footer .blockOne nav ul li{
+	float: left; width: 80px; margin-top: 0px;	
+	display: inline;	
+	line-height: 20px;
+}
+#wap_footer #content_footer .blockTwo nav ul li{
+	float: left;width: 100px;margin-top: 0px;	
+	display: inline;	
+	line-height: 20px;
+}
+#wap_footer #content_footer .blockOne nav ul li a,#wap_footer #content_footer .blockTwo nav ul li a{
+	color: #ffffff;
+	font-size: 12px; font-size: 13px;
+}
+#wap_footer #content_footer .blockOne nav ul li a:hover,#wap_footer #content_footer .blockTwo nav ul li a:hover{
+	color: #15274d;
+	font-weight: bold;	
+	padding: 1px;
+}
