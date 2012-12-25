@@ -1,0 +1,4 @@
+    Sitemap: http://www.redxtape.com.br/asv/sitemap.xml
+
+    User-agent: *
+    Disallow: /Chat/
