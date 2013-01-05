@@ -42,7 +42,8 @@ $route['default_controller'] = "front/home";
 
 $route['404_override'] = '';
 
-$route['noticias'] = 'front/news';
-$route['redtape'] =  'front/redtape';
+$route['noticias'] =    'front/news';
+$route['redtape'] =     'front/redtape';
+$route['produtos'] =    'front/products';
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
