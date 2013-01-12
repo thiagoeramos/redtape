@@ -9,7 +9,7 @@
                     <li><a href="<?=site_url()?>" title="Página Inicial | Redtape - Punk . Hardcore . Shop" >HOME</a></li>
                     <li><a href="<?=site_url('noticias')?>" title="Veja nossas últimas Notícias" >NEWS</a></li>
                     <li><a href="<?=site_url('redtape')?>" title="Um pouco mais sobre a Redtape" >REDTAPE</a></li>
-                    <li><a href="<?=site_url('produtos')?>" title="Nossas Camisetas Personalizadas " >CAMISETAS</a></li>
+                    <li><a href="<?=site_url('produtos/camisetas')?>" title="Nossas Camisetas Personalizadas " >CAMISETAS</a></li>
                     <li><a href="#" title="Confira nossos Bonés" >BONÉS</a></li>
                     <li><a href="#" title="Compre já nossa Sacola Ecobag" >ECOBAGS</a></li>
                     <li><a href="#" title="Adquira nossas Canecas" >CANECAS</a></li>
