@@ -79,7 +79,7 @@ label{
 	padding-top: 20%;
 	text-align: center;
 	text-shadow: -1px 2px 1px #000;
-	font: 47px 'BigNoodleTitleing';	font-variant: normal;	letter-spacing: 0.1pt;	font-size-adjust: none;	font-stretch: condensed;	
+	font: 47px 'BigNoodleTitleing';	font-variant: normal;	letter-spacing: 0.1pt;	font-size-adjust: none;	font-stretch: condensed;
 }
 .button{
 	clear: all; margin: 0px;	box-sizing: content-box;	 border: 0px;
@@ -88,10 +88,19 @@ label{
 	text-transform: none; font: 32px 'BigNoodleTitleing';font-variant: normal;letter-spacing: 0.1pt;font-size-adjust: none; font-stretch: condensed;font-weight: normal;
 }
 
+.buttonStrong{
+	 margin: 0px;	box-sizing: content-box;	 border: 0px;
+	background: #485d88; color: #fffffd;
+	cursor: pointer;
+	text-transform: none; font: 32px 'BigNoodleTitleing'; font-variant: normal;letter-spacing: 0.1pt;font-size-adjust: none; font-stretch: condensed;font-weight: normal;
+}
+.buttonStrong_active{
+	background: #ffffff !important; color: #485d88 !important;
+}
 .grayTitle{
 	position: relative;
 	color: #bdbec2;
-	font: 60px 'BigNoodleTitleing';	font-variant: normal;	letter-spacing: 0.1pt;	font-size-adjust: none;	font-stretch: condensed;	
+	font: 60px 'BigNoodleTitleing';	font-variant: normal;	letter-spacing: 0.1pt;	font-size-adjust: none;	font-stretch: condensed;
 }
 
 .input{
@@ -118,6 +127,63 @@ nav.goShop a:hover{
 	text-shadow: -0px 1px 2px #3a527c;	color: #4b5e86;
 }
 
+.ticketPrice{
+	position: relative; float: left; width: auto; height: 31px !important; z-index: 1; margin-top: -20px; margin-left: 5px;
+	background: #ed1651;
+}
+.ticketPrice:before{
+	float: right;  content: url('../_images/aba-ticket-shop.png');
+	width: 13px; height: 31px; margin-right: -13px;
+}
+.ticketPrice p{
+	font: 25px 'BigNoodleTitling';	font-variant: normal;	letter-spacing: 0.1pt;	font-size-adjust: none;	font-stretch: condensed;	text-align: center;
+	color: #fff; height: auto; float: left; position: relative; margin: 0px; padding:2px 4px 0px 5px;
+}
+.ticketBig{
+	height: 56px !important;
+}
+.ticketBig:before{
+	float: right;  content: url('../_images/aba-big-ticket-shop.png') !important;
+	width: 13px; height: 56px; margin-right: -13px;
+}
+.ticketBig p{
+	font: 45px 'BigNoodleTitling' !important;
+	float: left; position: relative; margin: 0px; padding:5px 4px 0px 5px !important;
+}
+
+.ticketPrice:before{
+	float: right;  content: url('../_images/aba-ticket-shop.png');
+	width: 13px; height: 31px; margin-right: -13px;
+}
+.ticketPrice p{
+	font: 25px 'BigNoodleTitling';	font-variant: normal;	letter-spacing: 0.1pt;	font-size-adjust: none;	font-stretch: condensed;	text-align: center;
+	color: #fff; height: auto; float: left; position: relative; margin: 0px; padding:2px 4px 0px 5px;
+}
+
+.description_to_products{
+	position: relative; clear: left; padding-top:10px;
+	text-align: left; color: #7f7f7f; font-size: 14px;
+}
+
+.description_to_products h3{
+	margin: 5px;
+	font: 27px 'BigNoodleTitleing';	font-variant: normal;	letter-spacing: 0.1pt;	font-size-adjust: none;	font-stretch: condensed;	text-align: center;
+	color: #485d88;
+	text-align: left;
+}
+.description_to_products h3 span{
+	color: #393939;
+}
+.description_to_products p{
+	margin: 0px; padding: 0px;
+	font-size: 10px;
+}
+
+.itemActive{
+	border-width:1px; border-style: solid;
+	border-color: #ed1651;
+	box-shadow: 1px 1px 5px #ed1651;
+}
 /*
 -----------------------------------------------------------------------------------------------------------------------
 -------------------------- STYLES ---------------------------------------------------
@@ -330,6 +396,92 @@ nav.goShop a:hover{
 	margin: 0px; padding: 0px;
 
 	font-size: 10px;
+}
+
+
+/*
+-----------------------------------------------------------------------------------------------------------------------
+-------------------------- PRODUTOS ---------------------------------------------------
+*/
+
+#wap_full #container #content #main_content section#products_list{
+	position: relative; width:570px; height: 287px;	margin: 0 auto; padding: 20px;
+}
+#wap_full #container #content #main_content section#products_list a article.row_product{
+	position: relative; width: 31%; height: auto; float: left; margin:7px 7px 0px 0px; 	border-width:1px; border-style: solid;  border-color: transparent;
+}
+#wap_full #container #content #main_content section#products_list a article.row_product:hover{
+	border-color: #ed1651;
+	box-shadow: 1px 1px 5px #ed1651;
+}
+#wap_full #container #content #main_content section#products_list a article.row_product:hover .description_to_products h3{
+	color: #ed1651 !important;
+}
+#wap_full #container #content #main_content section#products_list a article.row_product:hover .description_to_products h3 span{
+	color: #475e88 !important;
+}
+#wap_full #container #content #main_content section#products_list a article.row_product .figures_to_products{
+	position: relative; float: left; width: 100%;  height: 196px;
+	background: #f3f3f5;
+}
+#wap_full #container #content #main_content section#products_list a article.row_product .figures_to_products img{
+	width: 100%;  height: auto;top: 10%; position: relative; z-index: 0;
+}
+
+#wap_full #container #content #main_content section#products_list a article.row_product .figures_to_products .ticketPrice{
+	height: 31px !important; margin-top: -20px; margin-left: 5px;
+}
+#wap_full #container #content #main_content section#products_list a article.row_product .figures_to_products .ticketPrice p{
+	font: 25px 'BigNoodleTitling';
+}
+
+#wap_full #container #content #main_content section#products_list article.row_product .description_to_products h3{
+
+	font: 27px 'BigNoodleTitleing';
+}
+
+/*
+-----------------------------------------------------------------------------------------------------------------------
+-------------------------- DETALHE DO PRODUTOS ---------------------------------------------------
+*/
+
+#wap_full #container #content #main_content section#products_list{
+	position: relative; width:570px; height: 287px;	margin: 0 auto; padding: 20px;
+}
+#wap_full #container #content #main_content section#products_list a article.row_product_details{
+	position: relative; width: 100%; height: auto; float: left; margin:7px 7px 0px 0px;
+}
+
+#wap_full #container #content #main_content section#products_list article.row_product_details .figures_to_products{
+	position: relative; float: left; width: 41%;  height: 196px;
+	background: #f3f3f5;
+}
+#wap_full #container #content #main_content section#products_list  article.row_product_details .figures_to_products img{
+	width: 100%;  height: auto;top: 10%; position: relative; z-index: 0;
+}
+
+#wap_full #container #content #main_content section#products_list  article.row_product_details .description_to_products h3{
+	font: 37px 'BigNoodleTitleing' !important;
+}
+#wap_full #container #content #main_content section#products_list  article.row_product_details .info_product{
+	position: absolute; right: 10px; width: 55%; height: auto; bottom: -10px;
+
+}
+#wap_full #container #content #main_content section#products_list  article.row_product_details .info_product .navButtons{
+	position: relative; width: 100%; height: auto; float: left; margin-bottom: 10px;
+	background: red;
+
+}
+#wap_full #container #content #main_content section#products_list  article.row_product_details .info_product .navButtons .buttonStrong{
+	position: relative; width: 49.2%;  height: 50px; float: left; margin: 0px; padding: 0px;
+}
+
+#wap_full #container #content #main_content section#products_list  article.row_product_details .info_product .checkoutBuy{
+	position:  relative; width: 100%; height: auto; min-height:150px; float: left;
+	background: #ffffff;
+}
+#wap_full #container #content #main_content section#products_list  article.row_product_details .info_product .checkoutBuy .ticketPrice{
+	position: absolute; top: 48%; margin-left: 0px !important;
 }
 
 
