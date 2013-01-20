@@ -48,5 +48,14 @@ $route['produtos']                  =    'front/products';
 $route['produtos/(:any)/(:any)']    =    'front/products/details/$2';
 $route['produtos/(:any)']           =    'front/products/product/$1';
 $route['produtos/pag/(:any)']       =    'front/products/index/$1';
+
+
+$route['admin']                                                     = "admin/home";
+
+//Rotas de Login e Segurança
+$route['admin/login']							                            = 'admin/users/login';
+$route['admin/sair']                                                      = 'admin/users/logout';
+$route['admin/perfil']						                            = 'admin/users/profile';
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

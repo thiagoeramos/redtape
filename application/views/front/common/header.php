@@ -6,11 +6,22 @@
 <!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-<meta charset="utf-8">
-<meta name="robots" content="index,follow ">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index, follow">
 <meta name="description" content=""/>
 <meta name="keywords" content="" />
-<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">          -->
+<meta name="author" content="Thiago Ramos">
+<!-- VSUALIZAÇÃO PARA MOBILES-->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta content="pt-br" name="language">
+<meta content="Global" name="distribution">
+<meta content="General" name="rating">
+<meta content="ALL" name="robots">
+<meta content="document" name="resource-type">
+<meta content="1" name="revisit-after">
+<meta content="Internet" name="classification">
+
 
     <link href="<?=base_url();?>resources/css/reset.css" rel="stylesheet" type="text/css" />
     <link href="<?=base_url();?>resources/css/style.css" rel="stylesheet" type="text/css" />
